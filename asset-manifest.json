@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.0839cf0d.js",
-    "index.html": "/index.html",
-    "main.0839cf0d.js.map": "/static/js/main.0839cf0d.js.map"
+    "main.css": "/hometowntax/static/css/main.31d6cfe0.css",
+    "main.js": "/hometowntax/static/js/main.557d9b57.js",
+    "index.html": "/hometowntax/index.html",
+    "main.557d9b57.js.map": "/hometowntax/static/js/main.557d9b57.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.0839cf0d.js"
+    "static/js/main.557d9b57.js"
   ]
 }
