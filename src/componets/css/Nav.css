@@ -1,0 +1,25 @@
+#main-nav ul{
+    list-style: none;
+    padding: 0;
+}
+#main-nav a{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #142f5d;
+    text-decoration: none;
+}
+#main-nav li{
+    margin-right: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #a0d7f5;
+}
+#main-nav a:hover {
+    background: #a0d7f5;
+}
+/* Larger screens */
+@media screen and (min-width: 600px) {
+  #main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
