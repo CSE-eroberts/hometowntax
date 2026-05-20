@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hometowntax/static/css/main.fd9963bd.css",
-    "main.js": "/hometowntax/static/js/main.3b977d89.js",
+    "main.css": "/hometowntax/static/css/main.91627b05.css",
+    "main.js": "/hometowntax/static/js/main.9dd46b4b.js",
     "static/media/headshot1.png": "/hometowntax/static/media/headshot1.2f51e74f7c017efb6239.png",
     "static/media/headshot2.png": "/hometowntax/static/media/headshot2.2ed59d928e37f15d2c6f.png",
     "static/media/headshot3.png": "/hometowntax/static/media/headshot3.eb5fe7c5497297703577.png",
     "static/media/spotlight.png": "/hometowntax/static/media/spotlight.cbef9e3a5b04138a6ecb.png",
     "static/media/logo.png": "/hometowntax/static/media/logo.52a4bde53da6dd629b89.png",
     "index.html": "/hometowntax/index.html",
-    "main.fd9963bd.css.map": "/hometowntax/static/css/main.fd9963bd.css.map",
-    "main.3b977d89.js.map": "/hometowntax/static/js/main.3b977d89.js.map"
+    "main.91627b05.css.map": "/hometowntax/static/css/main.91627b05.css.map",
+    "main.9dd46b4b.js.map": "/hometowntax/static/js/main.9dd46b4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd9963bd.css",
-    "static/js/main.3b977d89.js"
+    "static/css/main.91627b05.css",
+    "static/js/main.9dd46b4b.js"
   ]
 }
