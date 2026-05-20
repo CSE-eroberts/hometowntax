@@ -1,6 +1,11 @@
+import Hero from "../componets/Hero";
+import ProcessSection from "../componets/ProcessSection";
 const Home = () => {
   return (
-      <h1>Welcome to Hometown Tax</h1>
+    <div>
+      <Hero />
+      <ProcessSection />
+    </div>
   );
 };
 

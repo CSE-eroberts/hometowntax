@@ -11,15 +11,19 @@
 #main-nav li{
     margin-right: 1rem;
     text-align: center;
-    border-bottom: 1px solid #a0d7f5;
 }
 #main-nav a:hover {
-    background: #a0d7f5;
+    border-bottom: 1px solid #a0d7f5;
 }
 /* Larger screens */
 @media screen and (min-width: 600px) {
   #main-nav ul {
     display: flex;
     justify-content: space-around;
+  }
+  #main-nav {
+    position: absolute;
+    right: 5%;
+    top: 34px;
   }
 }
