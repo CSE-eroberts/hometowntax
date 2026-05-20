@@ -1,4 +1,5 @@
 import "./css/ContactSection.css";
+import {useState} from "react"
 
 function LocationIcon() {
   return (
@@ -36,8 +37,11 @@ function ClockIcon() {
 }
 
 function ContactSection() {
+  const [feedback, setFeedback] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setFeedback("Sending...");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "b6117ef0-0fcd-481e-8f2c-28434894737b");
@@ -55,7 +59,9 @@ function ContactSection() {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      setFeedback("Message sent!");
+    } else {
+      setFeedback("Message failed to send.");
     }
   };
 
@@ -72,6 +78,7 @@ function ContactSection() {
             </div>
             <textarea name="message" placeholder="Message" />
             <button type="submit">Submit Form</button>
+            {feedback && <div className="form-feedback">{feedback}</div>}
           </form>
         </div>
 

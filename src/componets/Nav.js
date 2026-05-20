@@ -6,10 +6,13 @@ function Nav() {
     <nav id="main-nav">
       <ul>
         <li>
-          <a href="#ourteam">Our Team</a>
+          <Link to="/#ourteam">Our Team</Link>
         </li>
         <li>
-          <a href="#contact">Contact Us</a>
+          <Link to="/#contact">Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/FAQ">FAQ's</Link>
         </li>
       </ul>
     </nav>
