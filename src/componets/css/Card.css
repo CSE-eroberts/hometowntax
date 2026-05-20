@@ -42,6 +42,10 @@
   margin: 0;
 }
 
+.card-action {
+  margin-top: 1rem;
+}
+
 .card-process {
   background: #ffffff;
   border-radius: 4px;

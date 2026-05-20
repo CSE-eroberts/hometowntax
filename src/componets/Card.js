@@ -10,6 +10,7 @@ function Card({
   initials,
   subtitle,
   variant = "default",
+  children,
 }) {
   const iconIsImage = typeof icon === "string";
 
@@ -32,6 +33,7 @@ function Card({
       <h3>{title}</h3>
       {subtitle && <p className="card-subtitle">{subtitle}</p>}
       <p>{description}</p>
+      {children && <div className="card-action">{children}</div>}
     </article>
   );
 }

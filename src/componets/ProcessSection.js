@@ -1,5 +1,6 @@
 import "./css/ProcessSection.css";
 import Card from "./Card";
+import Schedule from "./Schedule";
 
 const processCards = [
   {
@@ -19,6 +20,7 @@ const processCards = [
   {
     title: "Schedule Meeting",
     description: "Call or book an appointment online to meet with us and get started.",
+    action: <Schedule />,
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="currentColor">
         <rect x="12" y="15" width="40" height="38" rx="4" />
@@ -58,7 +60,9 @@ function ProcessSection() {
             title={card.title}
             description={card.description}
             icon={card.icon}
-          />
+          >
+            {card.action}
+          </Card>
         ))}
       </div>
     </section>

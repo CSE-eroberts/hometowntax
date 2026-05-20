@@ -36,19 +36,42 @@ function ClockIcon() {
 }
 
 function ContactSection() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b6117ef0-0fcd-481e-8f2c-28434894737b");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
+
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="contact-panel">
         <div className="contact-form-area">
           <h2>Contact Us</h2>
 
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={onSubmit}>
             <div className="contact-form-row">
               <input type="text" name="name" placeholder="Full Name" />
               <input type="email" name="email" placeholder="Email Address" />
             </div>
-            <input type="tel" name="phone" placeholder="Phone Number" />
             <textarea name="message" placeholder="Message" />
+            <button type="submit">Submit Form</button>
           </form>
         </div>
 

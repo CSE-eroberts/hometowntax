@@ -30,7 +30,7 @@ const teamMembers = [
 
 function TeamSection() {
   return (
-    <section className="team-section">
+    <section id="ourteam" className="team-section">
       <h2>Our Team</h2>
 
       <div className="team-cards">

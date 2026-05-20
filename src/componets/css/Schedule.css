@@ -1,0 +1,16 @@
+.schedule-button {
+  background: #102a57;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.75rem 1.15rem;
+}
+
+.schedule-button:focus-visible {
+  outline: 3px solid #2f62a8;
+  outline-offset: 3px;
+}
