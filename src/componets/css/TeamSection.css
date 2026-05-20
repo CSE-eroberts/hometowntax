@@ -1,0 +1,25 @@
+.team-section {
+  background: #f7f5f2;
+  padding: 2.5rem 1rem 3.5rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  color: #102a57;
+  font-size: 1.85rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  margin: 0 0 1.8rem;
+}
+
+.team-cards {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 780px) {
+  .team-cards {
+    grid-template-columns: repeat(3, minmax(0, 320px));
+  }
+}

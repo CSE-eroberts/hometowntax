@@ -1,0 +1,125 @@
+.contact-section {
+  background: #102a57;
+  padding: 2.75rem 1rem 3.25rem;
+}
+
+.contact-panel {
+  box-sizing: border-box;
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 2rem 1.25rem;
+}
+
+.contact-form-area h2,
+.office-card h2 {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+  margin: 0 0 1.6rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.65rem;
+}
+
+.contact-form-row {
+  display: grid;
+  gap: 1.65rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #f7f5f2;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a57;
+  font: inherit;
+  font-size: 1.25rem;
+  min-height: 46px;
+  padding: 0.65rem 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b7b7b7;
+  opacity: 1;
+}
+
+.office-card {
+  background: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a57;
+  padding: 1.7rem 1.85rem;
+}
+
+.office-card h2 {
+  color: #102a57;
+  margin-bottom: 1.45rem;
+}
+
+.office-detail {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.85rem;
+  margin-bottom: 1.35rem;
+}
+
+.office-detail svg {
+  color: #102a57;
+  flex: 0 0 auto;
+  fill: none;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 24px;
+}
+
+.office-detail p,
+.office-detail a {
+  color: #102a57;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hours-heading {
+  margin-top: 1.4rem;
+}
+
+.office-hours {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 760px) {
+  .contact-panel {
+    align-items: start;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.75fr);
+    padding: 2rem 2.5rem;
+  }
+
+  .contact-form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .contact-panel {
+    gap: 5.5rem;
+    padding: 2rem 7.5rem 1.9rem;
+  }
+}
