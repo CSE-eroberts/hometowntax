@@ -10,7 +10,7 @@ function Header() {
         <Link to="/"><img id="logo" src={Logo} alt="Hometown Tax Logo" /></Link>
         <h1>Hometown Tax</h1>
       </div>
-      <Nav /> 
+      <Nav />
     </header>
   );
 }

@@ -1,6 +1,7 @@
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import "./css/Schedule.css";
+import { SignedIn,} from "@clerk/clerk-react";
 
 function Schedule() {
     useEffect(() => {
@@ -11,6 +12,7 @@ function Schedule() {
     }, [])
 
   return (
+    <SignedIn>
     <button
       className="schedule-button"
       type="button"
@@ -20,6 +22,7 @@ function Schedule() {
     >
       Schedule
     </button>
+    </SignedIn>
   );
 }
 
