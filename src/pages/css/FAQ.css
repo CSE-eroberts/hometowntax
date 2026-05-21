@@ -1,0 +1,347 @@
+.faq-page {
+  background: #ffffff;
+  color: #102a57;
+}
+
+.faq-hero {
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.92) 48%, rgba(255, 255, 255, 0.74) 100%),
+    url("../../images/spotlight.png");
+  background-position: center right;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 330px;
+  padding: 4rem 1.25rem 4.25rem;
+  text-align: center;
+}
+
+.faq-hero-content {
+  max-width: 760px;
+}
+
+.faq-eyebrow {
+  align-items: center;
+  color: #102a57;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 1.1rem;
+  justify-content: center;
+  letter-spacing: 0.24em;
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
+  text-transform: uppercase;
+}
+
+.faq-eyebrow::before,
+.faq-eyebrow::after {
+  background: #d8dde6;
+  content: "";
+  display: block;
+  height: 1px;
+  width: min(22vw, 165px);
+}
+
+.faq-hero h1 {
+  color: #102a57;
+  font-size: 2.85rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0 0 1.15rem;
+}
+
+.faq-hero p:not(.faq-eyebrow) {
+  color: #4c5360;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+.faq-hero-content span {
+  background: #0b4faa;
+  display: block;
+  height: 3px;
+  margin: 1.25rem auto 0;
+  width: 74px;
+}
+
+.faq-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2.6rem 1.25rem 0;
+}
+
+.faq-group {
+  padding: 0 0 1.35rem;
+}
+
+.faq-group + .faq-group {
+  border-top: 1px solid #d8dde6;
+  padding-top: 1.55rem;
+}
+
+.faq-group-heading {
+  align-items: center;
+  display: flex;
+  gap: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.faq-icon {
+  color: currentColor;
+  fill: none;
+  flex: 0 0 auto;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  width: 24px;
+}
+
+.faq-group-heading .faq-icon {
+  height: 34px;
+  width: 34px;
+}
+
+.faq-group h2,
+.faq-contact h2 {
+  color: #102a57;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #d8dde6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  align-items: center;
+  box-sizing: border-box;
+  color: #252a34;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 0.92rem;
+  justify-content: space-between;
+  line-height: 1.25;
+  list-style: none;
+  min-height: 38px;
+  padding: 0.65rem 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  color: #102a57;
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 1.45rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  border-top: 1px solid #d8dde6;
+  color: #4c5360;
+  font-family: Inter, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+  padding: 0.8rem 1rem 0.95rem;
+}
+
+.faq-contact {
+  background: #102a57;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: grid;
+  gap: 1.75rem;
+  margin: 1.5rem auto 2.75rem;
+  max-width: 1080px;
+  padding: 2rem 1.5rem;
+}
+
+.faq-contact h2 {
+  color: #ffffff;
+}
+
+.faq-contact-intro {
+  align-self: center;
+}
+
+.faq-contact-icon {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #102a57;
+  display: inline-flex;
+  height: 54px;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+  width: 54px;
+}
+
+.faq-contact-intro p,
+.faq-office p,
+.faq-office a {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.faq-contact-intro p {
+  margin-top: 0.85rem;
+  max-width: 280px;
+}
+
+.faq-contact-form {
+  align-self: center;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-form-row {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-contact-form input,
+.faq-contact-form textarea {
+  background: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #102a57;
+  font: inherit;
+  font-family: Inter, sans-serif;
+  font-size: 0.85rem;
+  min-height: 38px;
+  padding: 0.65rem 0.8rem;
+  width: 100%;
+}
+
+.faq-contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.faq-contact-form input::placeholder,
+.faq-contact-form textarea::placeholder {
+  color: #7f8792;
+  opacity: 1;
+}
+
+.faq-contact-form button {
+  align-self: end;
+  background: #0b4faa;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-family: Inter, sans-serif;
+  font-size: 0.86rem;
+  justify-self: end;
+  line-height: 1;
+  padding: 0.8rem 1rem;
+}
+
+.faq-contact-form button:focus-visible,
+.faq-contact a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.faq-office {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-office h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.1rem;
+}
+
+.faq-office-detail {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.faq-office-detail .faq-icon {
+  height: 20px;
+  margin-top: 0.1rem;
+  width: 20px;
+}
+
+.faq-office-hours-heading {
+  padding-top: 0.6rem;
+}
+
+@media screen and (min-width: 680px) {
+  .faq-form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .faq-hero {
+    min-height: 360px;
+    padding: 4.75rem 2rem 4.9rem;
+  }
+
+  .faq-hero h1 {
+    font-size: 4rem;
+  }
+
+  .faq-content {
+    padding-top: 3rem;
+  }
+
+  .faq-contact {
+    grid-template-columns: minmax(180px, 0.9fr) minmax(300px, 1.45fr) minmax(220px, 1fr);
+    padding: 2.25rem 2.5rem;
+  }
+
+  .faq-office {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .faq-contact {
+    margin-bottom: 3.25rem;
+  }
+}
