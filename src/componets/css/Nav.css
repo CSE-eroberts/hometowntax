@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.75rem;
+  gap: 0.35rem;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -10,10 +10,16 @@
 }
 
 #main-nav a {
+  border-radius: 4px;
+  color: var(--color-navy);
   display: block;
-  padding: 0.5rem 1rem;
-  color: #142f5d;
+  font-family: Inter, sans-serif;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.65rem 0.85rem;
   text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
 }
 
 #main-nav li {
@@ -21,7 +27,13 @@
 }
 
 #main-nav a:hover {
-  border-bottom: 1px solid #a0d7f5;
+  background: #eef3f9;
+  color: var(--color-blue);
+}
+
+#main-nav a:focus-visible {
+  outline: 3px solid rgba(47, 98, 168, 0.28);
+  outline-offset: 2px;
 }
 
 .nav-auth {
@@ -35,7 +47,7 @@
   #main-nav ul {
     align-items: center;
     flex-wrap: nowrap;
-    gap: 0.75rem;
+    gap: 0.25rem;
     justify-content: flex-end;
   }
 

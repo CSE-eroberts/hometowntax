@@ -1,6 +1,6 @@
 .faq-page {
-  background: #ffffff;
-  color: #102a57;
+  background: var(--color-cream);
+  color: var(--color-navy);
 }
 
 .faq-hero {
@@ -13,8 +13,8 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  min-height: 330px;
-  padding: 4rem 1.25rem 4.25rem;
+  min-height: clamp(280px, 34vw, 390px);
+  padding: clamp(3.5rem, 7vw, 5rem) 1.25rem;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
 
 .faq-eyebrow {
   align-items: center;
-  color: #102a57;
+  color: var(--color-blue);
   display: flex;
   font-family: Inter, sans-serif;
   font-size: 0.78rem;
@@ -39,7 +39,7 @@
 
 .faq-eyebrow::before,
 .faq-eyebrow::after {
-  background: #d8dde6;
+  background: var(--color-line);
   content: "";
   display: block;
   height: 1px;
@@ -47,8 +47,8 @@
 }
 
 .faq-hero h1 {
-  color: #102a57;
-  font-size: 2.85rem;
+  color: var(--color-navy);
+  font-size: clamp(2.5rem, 7vw, 4rem);
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.05;
@@ -56,7 +56,7 @@
 }
 
 .faq-hero p:not(.faq-eyebrow) {
-  color: #4c5360;
+  color: var(--color-muted);
   font-family: Inter, sans-serif;
   font-size: 1rem;
   line-height: 1.75;
@@ -65,7 +65,7 @@
 }
 
 .faq-hero-content span {
-  background: #0b4faa;
+  background: var(--color-gold);
   display: block;
   height: 3px;
   margin: 1.25rem auto 0;
@@ -75,24 +75,25 @@
 .faq-content {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 960px;
-  padding: 2.6rem 1.25rem 0;
+  max-width: 1000px;
+  padding: clamp(2.5rem, 5vw, 4rem) 1.25rem clamp(3rem, 6vw, 4.75rem);
 }
 
 .faq-group {
-  padding: 0 0 1.35rem;
+  padding: 0 0 1.6rem;
 }
 
 .faq-group + .faq-group {
-  border-top: 1px solid #d8dde6;
-  padding-top: 1.55rem;
+  border-top: 1px solid var(--color-line);
+  padding-top: 1.75rem;
 }
 
 .faq-group-heading {
   align-items: center;
+  color: var(--color-blue);
   display: flex;
   gap: 0.85rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.05rem;
 }
 
 .faq-icon {
@@ -112,10 +113,9 @@
   width: 34px;
 }
 
-.faq-group h2,
-.faq-contact h2 {
-  color: #102a57;
-  font-size: 1.55rem;
+.faq-group h2 {
+  color: var(--color-navy);
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.1;
@@ -124,30 +124,41 @@
 
 .faq-list {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.6rem;
 }
 
 .faq-item {
   background: #ffffff;
-  border: 1px solid #d8dde6;
-  border-radius: 4px;
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
   box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(16, 42, 87, 0.04);
   overflow: hidden;
 }
 
 .faq-item summary {
   align-items: center;
   box-sizing: border-box;
-  color: #252a34;
+  color: var(--color-text);
   cursor: pointer;
   display: flex;
   font-family: Inter, sans-serif;
   font-size: 0.92rem;
+  font-weight: 600;
   justify-content: space-between;
-  line-height: 1.25;
+  line-height: 1.35;
   list-style: none;
-  min-height: 38px;
-  padding: 0.65rem 1rem;
+  min-height: 48px;
+  padding: 0.8rem 1rem;
+}
+
+.faq-item summary:hover {
+  background: #f8fafc;
+}
+
+.faq-item summary:focus-visible {
+  outline: 3px solid rgba(47, 98, 168, 0.24);
+  outline-offset: -3px;
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -155,7 +166,7 @@
 }
 
 .faq-item summary::after {
-  color: #102a57;
+  color: var(--color-blue);
   content: "+";
   flex: 0 0 auto;
   font-size: 1.45rem;
@@ -169,179 +180,18 @@
 }
 
 .faq-item p {
-  border-top: 1px solid #d8dde6;
-  color: #4c5360;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
   font-family: Inter, sans-serif;
   font-size: 0.92rem;
   line-height: 1.55;
   margin: 0;
-  padding: 0.8rem 1rem 0.95rem;
-}
-
-.faq-contact {
-  background: #102a57;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #ffffff;
-  display: grid;
-  gap: 1.75rem;
-  margin: 1.5rem auto 2.75rem;
-  max-width: 1080px;
-  padding: 2rem 1.5rem;
-}
-
-.faq-contact h2 {
-  color: #ffffff;
-}
-
-.faq-contact-intro {
-  align-self: center;
-}
-
-.faq-contact-icon {
-  align-items: center;
-  background: #ffffff;
-  border-radius: 50%;
-  color: #102a57;
-  display: inline-flex;
-  height: 54px;
-  justify-content: center;
-  margin-bottom: 1.15rem;
-  width: 54px;
-}
-
-.faq-contact-intro p,
-.faq-office p,
-.faq-office a {
-  color: #ffffff;
-  font-family: Inter, sans-serif;
-  font-size: 0.92rem;
-  line-height: 1.55;
-  margin: 0;
-}
-
-.faq-contact-intro p {
-  margin-top: 0.85rem;
-  max-width: 280px;
-}
-
-.faq-contact-form {
-  align-self: center;
-  display: grid;
-  gap: 0.75rem;
-}
-
-.faq-form-row {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.faq-contact-form input,
-.faq-contact-form textarea {
-  background: #ffffff;
-  border: 0;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #102a57;
-  font: inherit;
-  font-family: Inter, sans-serif;
-  font-size: 0.85rem;
-  min-height: 38px;
-  padding: 0.65rem 0.8rem;
-  width: 100%;
-}
-
-.faq-contact-form textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.faq-contact-form input::placeholder,
-.faq-contact-form textarea::placeholder {
-  color: #7f8792;
-  opacity: 1;
-}
-
-.faq-contact-form button {
-  align-self: end;
-  background: #0b4faa;
-  border: 0;
-  border-radius: 4px;
-  color: #ffffff;
-  cursor: pointer;
-  font: inherit;
-  font-family: Inter, sans-serif;
-  font-size: 0.86rem;
-  justify-self: end;
-  line-height: 1;
-  padding: 0.8rem 1rem;
-}
-
-.faq-contact-form button:focus-visible,
-.faq-contact a:focus-visible {
-  outline: 3px solid #ffffff;
-  outline-offset: 3px;
-}
-
-.faq-office {
-  display: grid;
-  gap: 0.85rem;
-}
-
-.faq-office h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.1rem;
-}
-
-.faq-office-detail {
-  align-items: flex-start;
-  display: flex;
-  gap: 0.7rem;
-}
-
-.faq-office-detail .faq-icon {
-  height: 20px;
-  margin-top: 0.1rem;
-  width: 20px;
-}
-
-.faq-office-hours-heading {
-  padding-top: 0.6rem;
-}
-
-@media screen and (min-width: 680px) {
-  .faq-form-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  padding: 0.85rem 1rem 1rem;
 }
 
 @media screen and (min-width: 800px) {
-  .faq-hero {
-    min-height: 360px;
-    padding: 4.75rem 2rem 4.9rem;
-  }
-
-  .faq-hero h1 {
-    font-size: 4rem;
-  }
-
   .faq-content {
-    padding-top: 3rem;
-  }
-
-  .faq-contact {
-    grid-template-columns: minmax(180px, 0.9fr) minmax(300px, 1.45fr) minmax(220px, 1fr);
-    padding: 2.25rem 2.5rem;
-  }
-
-  .faq-office {
-    border-left: 1px solid rgba(255, 255, 255, 0.35);
     padding-left: 2rem;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .faq-contact {
-    margin-bottom: 3.25rem;
+    padding-right: 2rem;
   }
 }

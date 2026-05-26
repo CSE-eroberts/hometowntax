@@ -2,16 +2,15 @@ import Hero from "../componets/Hero";
 import ProcessSection from "../componets/ProcessSection";
 import ServicesSection from "../componets/ServicesSection";
 import TeamSection from "../componets/TeamSection";
-import ContactSection from "../componets/ContactSection";
+import "./css/Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <Hero />
       <ProcessSection />
       <ServicesSection />
       <TeamSection />
-      <ContactSection />
     </div>
   );
 };

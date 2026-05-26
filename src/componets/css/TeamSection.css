@@ -1,25 +1,38 @@
 .team-section {
-  background: #f7f5f2;
-  padding: 2.5rem 1rem 3.5rem;
+  background: var(--color-cream);
+  padding: clamp(3rem, 6vw, 4.75rem) 1.25rem;
   text-align: center;
 }
 
 .team-section h2 {
-  color: #102a57;
-  font-size: 1.85rem;
+  color: var(--color-navy);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: 0;
-  margin: 0 0 1.8rem;
+  margin: 0 0 2rem;
+}
+
+.team-section h2::after {
+  background: var(--color-gold);
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 0.85rem auto 0;
+  width: 64px;
 }
 
 .team-cards {
+  align-items: stretch;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
+  margin: 0 auto;
+  max-width: var(--page-max);
 }
 
 @media screen and (min-width: 780px) {
   .team-cards {
-    grid-template-columns: repeat(3, minmax(0, 320px));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

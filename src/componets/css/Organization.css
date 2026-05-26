@@ -1,0 +1,65 @@
+.organization-page {
+  background: var(--color-cream);
+  min-height: 520px;
+  padding: clamp(3rem, 6vw, 4.75rem) 1.25rem;
+}
+
+.organization-shell {
+  margin: 0 auto;
+  max-width: var(--page-max);
+}
+
+.organization-header {
+  margin-bottom: 1.6rem;
+}
+
+.organization-header p {
+  color: var(--color-blue);
+  font-family: Inter, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.organization-header h1 {
+  color: var(--color-navy);
+  font-size: clamp(2.25rem, 5vw, 3.35rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.organization-header h1::after {
+  background: var(--color-gold);
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 0.9rem;
+  width: 64px;
+}
+
+.organization-profile,
+.organization-message {
+  background: #ffffff;
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
+  box-shadow: var(--shadow-soft);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.organization-profile {
+  padding: 1rem;
+}
+
+.organization-message {
+  color: var(--color-muted);
+  font-family: Inter, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1.35rem 1.5rem;
+}

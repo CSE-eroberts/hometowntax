@@ -1,16 +1,23 @@
 .schedule-button {
-  background: #102a57;
+  background: var(--color-navy);
   border: 0;
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
-  font: inherit;
-  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
   line-height: 1;
+  min-height: 42px;
   padding: 0.75rem 1.15rem;
+  transition: background-color 160ms ease;
+}
+
+.schedule-button:hover {
+  background: var(--color-navy-dark);
 }
 
 .schedule-button:focus-visible {
-  outline: 3px solid #2f62a8;
+  outline: 3px solid rgba(47, 98, 168, 0.28);
   outline-offset: 3px;
 }

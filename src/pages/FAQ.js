@@ -204,27 +204,6 @@ function FAQIcon({ type }) {
         <path d="M8 10V7a4 4 0 0 1 8 0v3M12 15v2" />
       </>
     ),
-    mail: (
-      <>
-        <rect x="4" y="6" width="16" height="12" rx="2" />
-        <path d="m4 8 8 6 8-6" />
-      </>
-    ),
-    location: (
-      <>
-        <path d="M12 21s7-7.2 7-12a7 7 0 0 0-14 0c0 4.8 7 12 7 12Z" />
-        <circle cx="12" cy="9" r="2.5" />
-      </>
-    ),
-    phone: (
-      <path d="M6.6 3.8 9 8.9l-2.1 1.3c1 2.3 2.7 4 5 5l1.3-2.1 5.1 2.4-.8 3.8c-.2.8-.9 1.3-1.7 1.2C8.9 19.8 4.2 15.1 3.5 8.2c-.1-.8.4-1.5 1.2-1.7l1.9-.7Z" />
-    ),
-    clock: (
-      <>
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 7v6l4 2" />
-      </>
-    ),
   };
 
   return (
@@ -267,60 +246,6 @@ const FAQ = () => {
             </div>
           </section>
         ))}
-      </div>
-
-      <div className="faq-contact">
-        <div className="faq-contact-intro">
-          <div className="faq-contact-icon">
-            <FAQIcon type="mail" />
-          </div>
-          <h2>Still Have Questions?</h2>
-          <p>
-            We're here to help. Contact our team today and we'll be happy to
-            assist you.
-          </p>
-        </div>
-
-        <form className="faq-contact-form" onSubmit={(event) => event.preventDefault()}>
-          <div className="faq-form-row">
-            <input type="text" name="name" placeholder="Full Name" />
-            <input type="tel" name="phone" placeholder="Phone Number" />
-          </div>
-          <input type="email" name="email" placeholder="Email Address" />
-          <textarea name="message" placeholder="How can we help you?" />
-          <button type="submit">Send Message -></button>
-        </form>
-
-        <aside className="faq-office">
-          <h2>Our Office</h2>
-
-          <div className="faq-office-detail">
-            <FAQIcon type="location" />
-            <p>503 8th Ave, Aynor, SC 29511</p>
-          </div>
-          <div className="faq-office-detail">
-            <FAQIcon type="phone" />
-            <p>(843) 358-1070</p>
-          </div>
-          <div className="faq-office-detail">
-            <FAQIcon type="mail" />
-            <a href="mailto:hometowntaxservice@gmail.com">
-              hometowntaxservice@gmail.com
-            </a>
-          </div>
-
-          <h2 className="faq-office-hours-heading">Office Hours</h2>
-          <div className="faq-office-detail">
-            <FAQIcon type="clock" />
-            <p>
-              Monday-Friday
-              <br />
-              9:00 AM - 7:00 PM
-              <br />
-              Appointments &amp; Walk-Ins
-            </p>
-          </div>
-        </aside>
       </div>
     </section>
   );

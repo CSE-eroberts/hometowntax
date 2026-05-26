@@ -1,9 +1,53 @@
-html {
-    scroll-behavior: smooth;
+:root {
+  --color-navy: #102a57;
+  --color-navy-dark: #0b1f42;
+  --color-blue: #2f62a8;
+  --color-gold: #d6a94b;
+  --color-cream: #f7f5f2;
+  --color-line: #d8dde6;
+  --color-text: #252a34;
+  --color-muted: #4c5360;
+  --shadow-soft: 0 12px 28px rgba(16, 42, 87, 0.1);
+  --page-max: 1120px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Playfair Display', sans-serif;
-  margin:0;
+  background: #ffffff;
+  color: var(--color-text);
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
 }
 
 
