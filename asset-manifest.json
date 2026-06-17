@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hometowntax/static/css/main.13ba7fe6.css",
-    "main.js": "/hometowntax/static/js/main.1f11b016.js",
-    "static/media/headshot1.png": "/hometowntax/static/media/headshot1.2f51e74f7c017efb6239.png",
-    "static/media/headshot2.png": "/hometowntax/static/media/headshot2.2ed59d928e37f15d2c6f.png",
-    "static/media/headshot3.png": "/hometowntax/static/media/headshot3.eb5fe7c5497297703577.png",
-    "static/media/spotlight.png": "/hometowntax/static/media/spotlight.cbef9e3a5b04138a6ecb.png",
-    "static/media/logo.png": "/hometowntax/static/media/logo.52a4bde53da6dd629b89.png",
-    "index.html": "/hometowntax/index.html",
-    "main.13ba7fe6.css.map": "/hometowntax/static/css/main.13ba7fe6.css.map",
-    "main.1f11b016.js.map": "/hometowntax/static/js/main.1f11b016.js.map"
+    "main.css": "/static/css/main.8f4528d5.css",
+    "main.js": "/static/js/main.a3522886.js",
+    "static/media/headshot1.png": "/static/media/headshot1.2f51e74f7c017efb6239.png",
+    "static/media/headshot2.png": "/static/media/headshot2.2ed59d928e37f15d2c6f.png",
+    "static/media/headshot3.png": "/static/media/headshot3.eb5fe7c5497297703577.png",
+    "static/media/spotlight.png": "/static/media/spotlight.cbef9e3a5b04138a6ecb.png",
+    "static/media/logo.png": "/static/media/logo.52a4bde53da6dd629b89.png",
+    "index.html": "/index.html",
+    "main.8f4528d5.css.map": "/static/css/main.8f4528d5.css.map",
+    "main.a3522886.js.map": "/static/js/main.a3522886.js.map"
   },
   "entrypoints": [
-    "static/css/main.13ba7fe6.css",
-    "static/js/main.1f11b016.js"
+    "static/css/main.8f4528d5.css",
+    "static/js/main.a3522886.js"
   ]
 }
