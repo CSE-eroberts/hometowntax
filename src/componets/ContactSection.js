@@ -95,8 +95,8 @@ function ContactSection() {
           </div>
           <div className="office-detail">
             <MailIcon />
-            <a href="mailto:hometowntaxservice@gmail.com">
-              hometowntaxservice@gmail.com
+            <a href="mailto:hometowntaxsc@gmail.com">
+              hometowntaxsc@gmail.com
             </a>
           </div>
 

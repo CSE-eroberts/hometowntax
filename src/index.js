@@ -22,7 +22,7 @@ root.render(
       signInFallbackRedirectUrl="/hometowntax/"
       signUpFallbackRedirectUrl="/hometowntax/"
       afterSignOutUrl="/hometowntax/" >
-      <BrowserRouter basename={"/hometowntax"}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
