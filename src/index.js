@@ -19,9 +19,9 @@ root.render(
   <React.StrictMode>
     <ClerkProvider
       publishableKey={clerkPubKey}
-      signInFallbackRedirectUrl="/hometowntax/"
-      signUpFallbackRedirectUrl="/hometowntax/"
-      afterSignOutUrl="/hometowntax/" >
+      signInFallbackRedirectUrl="/"
+      signUpFallbackRedirectUrl="/"
+      afterSignOutUrl="/" >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
